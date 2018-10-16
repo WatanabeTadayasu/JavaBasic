@@ -33,6 +33,17 @@ public class PTra03_05 {
 		 * ※ ただし、入力された値が100より大きく、0未満の場合は、「不正な値が入力されました」を出力してください
 		 * ※ プログラムは何行書いても良いです
 		 */
-
+		if(num >= 75) {
+			System.out.println("雨が降る可能性が高いです");
+		}
+		if(num <= 74 && num > 30) {
+			System.out.println("雨が降るかもしれないです");
+		}
+		if(num <= 30) {
+			System.out.println("雨はまず降らないでしょう");
+		}
+		if(num <= 0 && num > 100) {
+			System.out.println("不正な値が入力されました");
+		}
 	}
 }

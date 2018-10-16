@@ -32,7 +32,15 @@ public class PTra03_04 {
 		 *
 		 * ※ プログラムは何行書いても良いです
 		 */
-
+		if(num % 4==0) {
+			System.out.println(line + "年はうるう年です。");
+		}
+		else if(num % 100==0) {
+			System.out.println(line + "年はうるう年ではありません。");
+		}
+		if(num % 400==0) {
+			System.out.println(line + "年はうるう年です。");
+		}
+		}
 
 	}
-}
