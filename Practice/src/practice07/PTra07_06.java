@@ -16,6 +16,38 @@ public class PTra07_06 {
 		};
 
 		// ★ 配列arrayに格納されている全ての数字の平均を出力してください
-
+		
+		// 総計
+				int sum = 0;
+				
+				for(int j = 0; j < array.length; j ++) {
+					System.out.print((j + 1) + "年目: ");
+					int sumYear = 0;
+					for(int i = 0; i < array[j].length; i ++) {
+						System.out.print(array[j][i] + " ");
+						sumYear += array[j][i];
+					}
+					System.out.println("合計: " + sumYear);
+					sum += sumYear;
+				}
+				
+				System.out.println("総計: " + sum);
+		
+		/* 総計
+		int sum = 0;
+		
+		for(int j = 0; j < array.length; j ++) {
+			System.out.print((j + 1) + "年目: ");
+			int sumYear = 0;
+			for(int i = 0; i < array[j].length; i ++) {
+				System.out.print(array[j][i] + " ");
+				sumYear += array[j][i];
+			}
+			System.out.println("合計: " + sumYear);
+			sum += sumYear;
+		}
+		
+		System.out.println("総計: " + sum);
+		*/
 	}
 }
