@@ -21,6 +21,8 @@ public class PTra10_01 {
 	 * メソッド
 	 * 		なし
 	 */
+	
+	 
 
 	public static void main(String[] args) {
 

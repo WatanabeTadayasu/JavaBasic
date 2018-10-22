@@ -19,8 +19,8 @@ public class user {
 		String userNm;
 		String mail;
 		String password;
-		
-		
+
+
 
 
 
