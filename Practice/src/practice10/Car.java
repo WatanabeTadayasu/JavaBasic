@@ -14,24 +14,22 @@ public class Car {
 	 * 		戻り値(int)、メソッド名(run)、引数(なし)
 	 * 			ガソリンを1消費して、ランダムな距離(1～15)進む（戻り値が進んだ距離）
 	 * 			ガソリンが負の数になった場合（もう進めない）は-1を返します。
+	*/
 
-
-	 ★ 変数carに格納されているインスタンスメソッドrunを使って、目的地まで進んでください
-	 * ★ 先にガソリンがなくなった場合は、「目的地に到達できませんでした」を出力してください
-	 * ★ 目的地についた時点で「目的地にまでn時間かかりました。残りのガソリンは、xリットルです」を出力してください
-	 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
-	 */
 
 	int serialNo;
 	String color;
 	int gasoline;
-	
-	int n;
-	int x;
 
 	int run() {
-		System.out.println("目的地にまで" + n + "時間かかりました。残りのガソリンは、" + (50-x) +"リットルです");
-		return n;
+		gasoline--;
+
+		if(gasoline < 0) {
+			return -1;
+		} else {
+			int number = new java.util.Random().nextInt(15) + 1;
+			return number;
+		}
 	}
 
 }

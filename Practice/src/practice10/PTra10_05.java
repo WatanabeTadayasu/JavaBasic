@@ -48,32 +48,46 @@ public class PTra10_05 {
 		 * ※n：runメソッドを実行した回数, xは残りのガソリンの数です
 		 */
 
-		int n = car.run();
-		//int input = Integer.parseInt(line);
+		 /*
+		 * メソッド
+		 * 		戻り値(int)、メソッド名(run)、引数(なし)
+		 * 			ガソリンを1消費して、ランダムな距離(1～15)進む（戻り値が進んだ距離）
+		 * 			ガソリンが負の数になった場合（もう進めない）は-1を返します。
+		 */
 
-	}
+		for(int n = 0; n < 100 ; n++)  {
 
-	public static int run() {
-		for (int n = 1; n < 20; n++) {
-			
-		}
-		for (int x = 50; x > -2; x--) {
 
-		}
-		for (int distance = 300; distance > 0; distance--) {
+			int number = car.run();
 
-					int number = new java.util.Random().nextInt(16);
+			int sum = 0;
 
-					System.out.println(distance - number);
-					
+
+
+			while(sum < 300) {
+			sum += number;
+
 			}
 
-		
-		
-	
-		int n = 1;
-		return n;
-		
-	}
 
+			if(sum == distance) {
+
+				//int sum = (n*number);
+				int x = 50 - n;
+
+
+				System.out.println("目的地にまで" + n + "時間かかりました。残りのガソリンは、" + x + "リットルです");
+				break;
+			}
+
+
+			if(number == -1) {
+				System.out.println("目的地に到達できませんでした");
+				break;
+			}
+
+			//int gasoline = car.run();
+
+		}
+	}
 }
