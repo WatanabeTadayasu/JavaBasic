@@ -24,7 +24,7 @@ public class Book {
 	 * @param publication	出版社
 	 */
 	Book(String title, String author, int price, int pageSize, String publication) {
-		this.title = title;
+		this.title =title;
 		this.author = author;
 		this.price = price;
 		this.pageSize = pageSize;
@@ -45,6 +45,10 @@ public class Book {
 
 	/** 出版社 */
 	String publication;
+
+
+
+
 
 	/**
 	 * 本の情報を文字列で取得します

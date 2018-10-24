@@ -54,40 +54,33 @@ public class PTra10_05 {
 		 * 			ガソリンを1消費して、ランダムな距離(1～15)進む（戻り値が進んだ距離）
 		 * 			ガソリンが負の数になった場合（もう進めない）は-1を返します。
 		 */
-
-		for(int n = 0; n < 100 ; n++)  {
-
-
-			int number = car.run();
-
-			int sum = 0;
-
-
-
-			while(sum < 300) {
-			sum += number;
-
-			}
-
-
-			if(sum == distance) {
-
-				//int sum = (n*number);
-				int x = 50 - n;
-
-
-				System.out.println("目的地にまで" + n + "時間かかりました。残りのガソリンは、" + x + "リットルです");
-				break;
-			}
-
-
-			if(number == -1) {
+			
+		int sum = 0;
+		//int n = 0;
+		
+		for(int n = 0; n < 51; n ++) {
+		//while (n >= 51) {
+			
+			//n ++;
+			
+			int random = car.run();
+			
+			if(random == -1) {
 				System.out.println("目的地に到達できませんでした");
 				break;
 			}
-
-			//int gasoline = car.run();
-
+			
+			sum += random;
+		
+			if(sum >= 300) {
+				
+				//int sum = (n*number);
+				int x = 50 - n;
+				
+				System.out.println("目的地にまで" + n + "時間かかりました。残りのガソリンは、" + x + "リットルです");
+				break;
+			}
 		}
 	}
 }
+
