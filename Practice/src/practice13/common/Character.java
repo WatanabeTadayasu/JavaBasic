@@ -12,6 +12,7 @@ package practice13.common;
  *
  */
 public class Character {
+
 	/** 名前 */
 	private String name = "キャラクター";
 
@@ -50,6 +51,14 @@ public class Character {
 	 */
 	public String getName() {
 		return this.name;
+	}
+	
+	/**
+	 * hpを取得します
+	 * @return hp
+	 */
+	public int getHp() {
+		return this.hp;
 	}
 
 	/**

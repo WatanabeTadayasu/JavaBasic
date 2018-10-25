@@ -12,6 +12,7 @@ package practice13.common;
  *
  */
 public class Animal {
+	
 	/** 名前 */
 	private String name;
 
