@@ -22,6 +22,10 @@ public class Character {
 	/** 力 */
 	private int power;
 
+	public int getPower() {
+		return this.power;
+	}
+
 	/** 防御力 */
 	private int endurance;
 
@@ -35,6 +39,10 @@ public class Character {
 		this.hp = hp;
 		this.power = power;
 		this.endurance = endurance;
+	}
+
+	public Character() {
+		// TODO 自動生成されたコンストラクター・スタブ
 	}
 
 	/**
@@ -52,7 +60,7 @@ public class Character {
 	public String getName() {
 		return this.name;
 	}
-	
+
 	/**
 	 * hpを取得します
 	 * @return hp

@@ -6,4 +6,8 @@ public class Slime extends Character {
 		super(10, 5, 2);
 	}
 
+	public Slime() {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
 }

@@ -14,14 +14,39 @@ public class Item {
 	 * 		上記2つを設定するための引数を持つ
 	 */
 
-		String name;
-		int additionalDamage;
+		private String name;
+		private static int additionalDamage;
 
-		Item (String name){
+		public String getName() {
+			return this.name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+
+
+		public static int getAdditionalDamage() {
+			return additionalDamage;
+		}
+
+		public void setAdditionalDamage(int additionalDamage) {
+			Item.additionalDamage = additionalDamage;
+		}
+
+		/*Item (String name){
 			this.name = name;
 		}
 		Item (int additionalDamage){
 			this.additionalDamage = additionalDamage;
+		}*/
+
+
+		public Item(String name, int additionalDamage) {
+			// TODO 自動生成されたコンストラクター・スタブ
 		}
+
+
 
 }

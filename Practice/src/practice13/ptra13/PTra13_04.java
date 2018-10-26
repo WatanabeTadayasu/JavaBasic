@@ -43,22 +43,6 @@ public class PTra13_04 {
 			attack1 = h.damage(5);
 			
 			// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」
-			/*public static void main(String[] args) {
-				double	x = Input.getDouble();　　　　　　　　　 …（１）数値を変数ｘに入力する
-				if(isZero(x)){　　　　　　　　　　　　　　　　　 …（２）ｘが０かどうかisZero(x)の戻り値でチェックする
-				    System.out.println("ゼロです");　　　　　　　…（３）
-				}else{
-				    System.out.println("ゼロではありません");　　…（４）
-				}
-			    }
-
-			    public static boolean isZero(double a){  　　　　　　…０かどうか検査する
-				if(a==0){　　　　　　　　　　　　　　　　　　　　…Ａ
-				    return true;　　　　　　　　　　　　　　　　 …Ｂ
-				}else{
-				    return false;　　　　　　　　　　　　　　　　…Ｃ
-				}
-			    }*/
 
 			if (attack == true) {
 				System.out.println("勇者はスライムとの戦闘に勝利した");
@@ -69,3 +53,19 @@ public class PTra13_04 {
 			}
 	}
 }
+/*public static void main(String[] args) {
+double	x = Input.getDouble();　　　　　　　　　 …（１）数値を変数ｘに入力する
+if(isZero(x)){　　　　　　　　　　　　　　　　　 …（２）ｘが０かどうかisZero(x)の戻り値でチェックする
+    System.out.println("ゼロです");　　　　　　　…（３）
+}else{
+    System.out.println("ゼロではありません");　　…（４）
+}
+}
+
+public static boolean isZero(double a){  　　　　　　…０かどうか検査する
+if(a==0){　　　　　　　　　　　　　　　　　　　　…Ａ
+    return true;　　　　　　　　　　　　　　　　 …Ｂ
+}else{
+    return false;　　　　　　　　　　　　　　　　…Ｃ
+}
+}*/
