@@ -17,28 +17,18 @@ public class SuperHero extends Hero {
 
 	private Item equipment;
 
-	public SuperHero(int hp, int power, int endurance) {
-		super(25, 10, 7);
-	}
-
-
-
-	/*public int attack() {
-		return this.power;
-	}*/
-
 	public SuperHero() {
-		super();
+		super(25, 10, 7);
 		// TODO 自動生成されたコンストラクター・スタブ
 	}
-
-
 
 	public int attack() {
 		return getPower() + Item.getAdditionalDamage();
 	}
 
-
+	/*public int attack() {
+	return this.power;
+}*/
 
 	public Item getEquipment() {
 		return this.equipment;

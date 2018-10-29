@@ -6,9 +6,6 @@ public class Hero extends Character {
 		super(25, 10, 7);
 	}
 
-	public Hero() {
-		super();
-		// TODO 自動生成されたコンストラクター・スタブ
-	}
+
 }
 

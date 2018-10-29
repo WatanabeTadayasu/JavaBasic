@@ -32,16 +32,16 @@ public class PTra13_04 {
 		 */
 		boolean attack = false;
 		boolean attack1 = false;
-		
+
 			while(attack == false && attack1 == false) {
-			
+
 			h.attack();
-			
+
 			attack = s.damage(10);
 			s.attack();
-			
+
 			attack1 = h.damage(5);
-			
+
 			// ★ 勝利した方の出力を行ってください。「○○は■■との戦闘に勝利した」
 
 			if (attack == true) {

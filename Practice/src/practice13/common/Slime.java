@@ -10,4 +10,8 @@ public class Slime extends Character {
 		// TODO 自動生成されたコンストラクター・スタブ
 	}
 
+
+
+
+
 }

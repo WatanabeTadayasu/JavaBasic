@@ -25,6 +25,10 @@ public class Character {
 	public int getPower() {
 		return this.power;
 	}
+	
+	public void setPower(int power) {
+		this.power = power;
+	}
 
 	/** 防御力 */
 	private int endurance;

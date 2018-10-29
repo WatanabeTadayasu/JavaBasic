@@ -24,6 +24,7 @@ public class PTra13_03 {
 		s.setName("スライム");
 
 		// ★ common.Slimeインスタンスのキャラクター情報を表示してください
-		s.showParameter();
+		String g = s.showParameter();
+		System.out.println(g);s.showParameter();
 	}
 }
