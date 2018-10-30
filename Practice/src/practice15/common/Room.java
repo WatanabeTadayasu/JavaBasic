@@ -58,4 +58,12 @@ public class Room {
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
+	public String[] getCurriculum() {
+		// TODO 自動生成されたメソッド・スタブ
+		return null;
+	}
+	
+	
+	
+	
 }

@@ -15,10 +15,16 @@ public class PTra15_02 {
 		Room room = new Java2Month();
 
 		// roomに格納されたJava2MonthインスタンスのgetCurriculumメソッドを呼び出してください
-		String[] array = Java2Month.getCurriculum();
-
+		String[] array = room.getCurriculum();
+		
 		// 取得したカリキュラム情報を全て出力してください
-		System.out.println(array);
+		//Room[] courseList = {array};
+		
+		for (String Curr: array){
+			  System.out.println(Curr);
+			}
+		//System.out.print(courseList);
+		
 	}
 }
 /*JavaCourse jCourse = new JavaCourse();
@@ -30,4 +36,12 @@ DBCourse dbCourse = new DBCourse();
 
 for (Course course : courseList) {
 	System.out.println(course.getCourseName());
-}*/
+}
+
+
+int data[] = {85, 72, 89};
+
+for (int seiseki: data){
+  System.out.println(seiseki);
+}
+*/

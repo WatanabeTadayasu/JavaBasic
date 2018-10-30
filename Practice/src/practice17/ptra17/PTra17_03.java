@@ -14,6 +14,9 @@ public class PTra17_03 {
 	public static void main(String[] args) {
 		quiz();
 	}
+	
+	
+
 
 	public static void quiz() {
 		final String[] question = {
@@ -39,16 +42,29 @@ public class PTra17_03 {
 			for (int i = 0; i < question.length; i++) {
 				System.out.println("問題：" + (i + 1));
 				System.out.println(question[i]);
-
+				
 				System.out.println("回答を数字で入力してください");
+				
 				String input = ThrowExceptionUtil.inputValue();
+				
+				try {
 
 				int num = Integer.parseInt(input);
-
+				
+				
+				
 				if (answer[i] == num) {
 					score++;
 				}
+				
+				}catch(NumberFormatException e) {
+					System.out.println("回答を数字で入力してください");
+				}
+				
 			}
+			
+			
+		
 		} catch(IOException e) {
 			System.out.println("例外が発生しました");
 		} catch(NumberFormatException e) {
