@@ -11,13 +11,11 @@ import java.io.IOException;
 import practice17.common.ThrowExceptionUtil;
 
 public class PTra17_03 {
+
 	public static void main(String[] args) {
 		quiz();
 	}
 	
-	
-
-
 	public static void quiz() {
 		final String[] question = {
 				 "Javaの予約語となっている単語は次のうちどれか。\n1:static\t2:Sample\t3:java"
@@ -45,9 +43,16 @@ public class PTra17_03 {
 				
 				System.out.println("回答を数字で入力してください");
 				
+				
+				
+				//できでいない。
+				
+				
+				
+				
 				String input = ThrowExceptionUtil.inputValue();
 				
-				try {
+				
 
 				int num = Integer.parseInt(input);
 				
@@ -56,14 +61,7 @@ public class PTra17_03 {
 				if (answer[i] == num) {
 					score++;
 				}
-				
-				}catch(NumberFormatException e) {
-					System.out.println("回答を数字で入力してください");
-				}
-				
 			}
-			
-			
 		
 		} catch(IOException e) {
 			System.out.println("例外が発生しました");

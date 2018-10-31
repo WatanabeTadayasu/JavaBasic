@@ -6,6 +6,10 @@
  */
 package practice18;
 
+
+
+import entity.Player;
+
 public class PTra18_02 {
 
 	/*
@@ -31,7 +35,10 @@ public class PTra18_02 {
 		 * ★ file/BestElevenCandidate.csvの内容を取得し、１行毎にPlayerインスタンスに情報を格納してください
 		 * ★ ArrayListを作成して、Playerインスタンスを格納してください
 		 */
-
+		
+		Player p = new Player();
+		
+		
 
 		// ★ ArrayListに格納されているインスタンス全てのtoStringメソッドを実行し、出力してください
 		// ※ できれば拡張for文を使いましょう
