@@ -17,18 +17,24 @@ public class PTra17_04 {
 		 */
 
 		
-		//できてないです。
 		
 		
-		for(int i = 0 ; i < 5 ; i++){
-		try{
-		       	//1秒間停止させます。
-				Thread.sleep(1000);
-				System.out.println(i + str);
+		String[] arayy = {"ス","ッ","キ","リ","わ","か","る","J","a","v","a","入","門"};
+		
+		
+		for(int i = 0; i < arayy.length; ++i) {
+		    for(int j = 0; j < arayy[i].length(); ++j) {
+		        System.out.print(arayy[i]);   
 
-		}catch(InterruptedException e){
+		        try {
+		            Thread.sleep(100);
+		        }
+		        catch(InterruptedException e) {
+		            e.printStackTrace();
+		        }
+		    }
+		  
+		}
+	}
 
-		   				}
-		          	}
-				}
-			}
+	}
