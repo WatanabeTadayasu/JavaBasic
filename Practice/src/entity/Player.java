@@ -23,6 +23,11 @@ public class Player {
 	private String team;
 	
 	
+	
+	
+	public Player() {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
 	public String getPosition() {
 		return position;
 	}
