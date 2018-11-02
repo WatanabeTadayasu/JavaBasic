@@ -28,7 +28,7 @@ public class PTra18_01 {
                 // ★ 1行ごとにArrayListに格納してください
                 
              	array.add(line);
-        		
+             	
         	}
         } catch (FileNotFoundException e) {
             System.out.println("ファイルが見つかりません");
@@ -37,14 +37,20 @@ public class PTra18_01 {
 		// ★ ArrayListに格納された値を全て表示してください
 		// ※ できれば拡張for文を使いましょう
         
+        //System.out.println(array);  arrayという一つの箱に格納
+        
+
+        
         for(String List : array){
             System.out.println(List);
         }
         
         /*
-        for (Iterator<String> it = array.iterator(); it.hasNext();) {
-            String ArrayList = it.next();
-            System.out.println(ArrayList);
+        	String str = "清水,山本,斉藤,高橋,渡辺";
+			String[] name = str.split(",");
+			for(int i=0; i<name.length; i++){
+　			System.out.println(name[i]);
+			}
         }*/
 	
 	}
