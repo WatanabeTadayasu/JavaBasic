@@ -67,10 +67,6 @@ public class PTra18_02 {
              //	System.out.println(p);
              	array.add(p);
              	
-             	
-             	
-             	
-
         	}
         } catch (FileNotFoundException e) {
             System.out.println("ファイルが見つかりません");

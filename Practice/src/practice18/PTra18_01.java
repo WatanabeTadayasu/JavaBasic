@@ -39,8 +39,6 @@ public class PTra18_01 {
         
         //System.out.println(array);  arrayという一つの箱に格納
         
-
-        
         for(String List : array){
             System.out.println(List);
         }
